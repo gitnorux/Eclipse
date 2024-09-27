@@ -1,0 +1,68 @@
+<html><head>
+<style>
+body{
+
+background-color:rgb(32, 20, 98);
+width:100%;
+background-clip: unset;
+background: -webkit-image-set();
+height:100%;
+overflow:hidden;
+
+}
+.earth{
+  width: 300px;
+  height: 300px;
+border-radius:50%;left:40%;
+position:absolute;top:20%;
+  background:lightyellow
+  ;
+  box-shadow: 0 0 50px rgba(219, 255, 224, 1);
+}
+
+.moon{
+
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color:rgb(32, 20, 98);
+  animation: eclipse 20s infinite linear;
+  box-shadow: 0 0 50px rgb(32, 20, 98);
+  transform-origin: 50% 150%;
+  transform: rotate(-60deg);
+}
+@keyframes eclipse {
+  0% {
+   	transform: rotate(-60deg); 
+    background-color: blue;
+  }
+  
+  90% {
+   	transform: rotate(300deg); 
+    background-color: aquamarine;
+  }
+
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="earth">
+<div class="moon"></div>
+</div>
+  
+</body>
+  </html>
